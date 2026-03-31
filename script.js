@@ -102,13 +102,28 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 // Part 4: Conditionals
 // ==========================
 
-// TODO:
-// 1. Write at least TWO if/else statements
-//
-// Ideas:
-// - check if a value is NaN
-// - check if a number is an integer
-// - check if a result is greater than a certain value
-//
-// 2. Display a message on the page based on the condition
-//    (append it to an existing section or create a new message)
+// Condition 1: Check if a value is NaN
+let message1;
+
+if (Number.isNaN(converted4)) {
+  message1 = "Value 'hello' is NOT a valid number.";
+} else {
+  message1 = "Value 'hello' is a valid number.";
+}
+
+// Condition 2: Check if total cost is greater than 50
+let message2;
+
+if (total > 50) {
+  message2 = "Total cost is greater than $50.";
+} else {
+  message2 = "Total cost is $50 or less.";
+}
+
+// Combine messages
+let conditionalOutput = "<br><br><strong>Conditional Messages:</strong><br>" +
+  message1 + "<br>" +
+  message2;
+
+// Display by APPENDING to math section
+document.getElementById("mathOutput").innerHTML += conditionalOutput;
