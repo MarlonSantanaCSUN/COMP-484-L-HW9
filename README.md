@@ -22,7 +22,7 @@ https://marlonsantanacsun.github.io/COMP-484-L-HW9/
 
 The screenshot of the finished webpage:
 
-![Screenshot](HW9Screenshot.png)
+![Screenshot](HW9READMEScreenshot.png)
 
 ---
 4. A short reflection of **4-5 sentences** that answers:
