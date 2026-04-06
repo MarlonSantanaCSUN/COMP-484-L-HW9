@@ -106,9 +106,9 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 let message1;
 
 if (Number.isNaN(converted4)) {
-  message1 = "Value 'hello' is NOT a valid number.";
+  message1 = "The 4th value is NOT a valid number.";
 } else {
-  message1 = "Value 'hello' is a valid number.";
+  message1 = "The 4th value is a valid number.";
 }
 
 // Condition 2: Check if total cost is greater than 50
