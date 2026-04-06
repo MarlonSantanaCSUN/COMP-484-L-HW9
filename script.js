@@ -6,9 +6,9 @@
 const today = new Date();
 
 // 2. Get the current month, day, and year
-let month = today.getMonth(); // 0-based (0 = January)
-let day = today.getDate();
-let year = today.getFullYear();
+var month = today.getMonth(); // 0-based (0 = January)
+var day = today.getDate();
+var year = today.getFullYear();
 
 // 3. Adjust month (add 1 because it's 0-based)
 month = month + 1;
@@ -33,37 +33,37 @@ document.getElementById("dateOutput").textContent = formattedDate;
 // ==========================
 
 // 1. Create variables
-let value1 = "10";
-let value2 = "123456789";
-let value3 = "102938.4756";
-let value4 = "COMPUTER SCIENCE WEB ENGINEERING";
+var value1 = "10";
+var value2 = "123456789";
+var value3 = "102938.4756";
+var value4 = "COMPUTER SCIENCE WEB ENGINEERING";
 
 // 2. Convert values
-let converted1 = Number(value1);
-let converted2 = Number(value2);
-let converted3 = Number(value3);
-let converted4 = Number(value4);
+var converted1 = Number(value1);
+var converted2 = Number(value2);
+var converted3 = Number(value3);
+var converted4 = Number(value4);
 
 // 3. Check NaN
-let isNaN1 = Number.isNaN(converted1);
-let isNaN2 = Number.isNaN(converted2);
-let isNaN3 = Number.isNaN(converted3);
-let isNaN4 = Number.isNaN(converted4);
+var isNaN1 = Number.isNaN(converted1);
+var isNaN2 = Number.isNaN(converted2);
+var isNaN3 = Number.isNaN(converted3);
+var isNaN4 = Number.isNaN(converted4);
 
 // 4. Check Integer
-let isInt1 = Number.isInteger(converted1);
-let isInt2 = Number.isInteger(converted2);
-let isInt3 = Number.isInteger(converted3);
-let isInt4 = Number.isInteger(converted4);
+var isInt1 = Number.isInteger(converted1);
+var isInt2 = Number.isInteger(converted2);
+var isInt3 = Number.isInteger(converted3);
+var isInt4 = Number.isInteger(converted4);
 
 // 5. Create result strings
-let result1 = `Original: "${value1}" → Converted: ${converted1} → isNaN: ${isNaN1} → isInteger: ${isInt1}`;
-let result2 = `Original: "${value2}" → Converted: ${converted2} → isNaN: ${isNaN2} → isInteger: ${isInt2}`;
-let result3 = `Original: "${value3}" → Converted: ${converted3} → isNaN: ${isNaN3} → isInteger: ${isInt3}`;
-let result4 = `Original: "${value4}" → Converted: ${converted4} → isNaN: ${isNaN4} → isInteger: ${isInt4}`;
+var result1 = `Original: "${value1}" → Converted: ${converted1} → isNaN: ${isNaN1} → isInteger: ${isInt1}`;
+var result2 = `Original: "${value2}" → Converted: ${converted2} → isNaN: ${isNaN2} → isInteger: ${isInt2}`;
+var result3 = `Original: "${value3}" → Converted: ${converted3} → isNaN: ${isNaN3} → isInteger: ${isInt3}`;
+var result4 = `Original: "${value4}" → Converted: ${converted4} → isNaN: ${isNaN4} → isInteger: ${isInt4}`;
 
 // 6. Combine into ONE string
-let finalOutput = result1 + "<br>" + result2 + "<br>" + result3 + "<br>" + result4;
+var finalOutput = result1 + "<br>" + result2 + "<br>" + result3 + "<br>" + result4;
 
 // 7. Display on webpage
 document.getElementById("numberConversionOutput").innerHTML = finalOutput;
@@ -73,22 +73,22 @@ document.getElementById("numberConversionOutput").innerHTML = finalOutput;
 // ==========================
 
 // 1. Create numeric variables
-let itemPrice = 49.99;
-let taxRate = 0.0825; // 8.25%
-let shipping = 5.50;
+var itemPrice = 49.99;
+var taxRate = 0.0825; // 8.25%
+var shipping = 5.50;
 
 // 2. Perform calculations
-let subtotal = itemPrice + shipping; // addition
-let taxAmount = subtotal * taxRate; // multiplication
-let total = subtotal + taxAmount; // addition
+var subtotal = itemPrice + shipping; // addition
+var taxAmount = subtotal * taxRate; // multiplication
+var total = subtotal + taxAmount; // addition
 
 // 3. Format numbers
-let formattedSubtotal = subtotal.toFixed(2);
-let formattedTax = taxAmount.toFixed(2);
-let formattedTotal = total.toFixed(2);
+var formattedSubtotal = subtotal.toFixed(2);
+var formattedTax = taxAmount.toFixed(2);
+var formattedTotal = total.toFixed(2);
 
 // 4. Build output string
-let mathResults =
+var mathResults =
   `Item Price: $${itemPrice}<br>` +
   `Shipping: $${shipping}<br>` +
   `Subtotal: $${formattedSubtotal}<br>` +
@@ -103,7 +103,7 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 // ==========================
 
 //Check if a value is NaN
-let message1;
+var message1;
 
 if (Number.isNaN(converted1)) {
   message1 = "The 1st value is NOT a valid number.";
@@ -112,7 +112,7 @@ if (Number.isNaN(converted1)) {
 }
 
 //Check if total cost is greater than 50
-let message2;
+var message2;
 
 if (total > 50) {
   message2 = "Total cost is greater than $50.";
@@ -121,7 +121,7 @@ if (total > 50) {
 }
 
 // Combine messages
-let conditionalOutput = "<br><br><strong>Conditional Messages:</strong><br>" +
+var conditionalOutput = "<br><br><strong>Conditional Messages:</strong><br>" +
   message1 + "<br>" +
   message2;
 
