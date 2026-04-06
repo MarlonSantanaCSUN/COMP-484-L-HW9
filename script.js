@@ -33,10 +33,10 @@ document.getElementById("dateOutput").textContent = formattedDate;
 // ==========================
 
 // 1. Create variables
-let value1 = "67";
-let value2 = "123";
-let value3 = "19.87";
-let value4 = "COMP";
+let value1 = "10";
+let value2 = "123456789";
+let value3 = "102938.4756";
+let value4 = "COMPUTER SCIENCE WEB ENGINEERING";
 
 // 2. Convert values
 let converted1 = Number(value1);
@@ -75,7 +75,7 @@ document.getElementById("numberConversionOutput").innerHTML = finalOutput;
 // 1. Create numeric variables
 let itemPrice = 49.99;
 let taxRate = 0.0825; // 8.25%
-let shipping = 5.5;
+let shipping = 5.50;
 
 // 2. Perform calculations
 let subtotal = itemPrice + shipping; // addition
@@ -102,16 +102,16 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 // Part 4: Conditionals
 // ==========================
 
-// Condition 1: Check if a value is NaN
+//Check if a value is NaN
 let message1;
 
-if (Number.isNaN(converted4)) {
-  message1 = "The 4th value is NOT a valid number.";
+if (Number.isNaN(converted1)) {
+  message1 = "The 1st value is NOT a valid number.";
 } else {
-  message1 = "The 4th value is a valid number.";
+  message1 = "The 1st value is a valid number.";
 }
 
-// Condition 2: Check if total cost is greater than 50
+//Check if total cost is greater than 50
 let message2;
 
 if (total > 50) {
