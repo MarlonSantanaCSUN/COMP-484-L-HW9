@@ -33,10 +33,10 @@ document.getElementById("dateOutput").textContent = formattedDate;
 // ==========================
 
 // 1. Create variables
-let value1 = "42";
-let value2 = "100";
-let value3 = "19.75";
-let value4 = "hello";
+let value1 = "67";
+let value2 = "123";
+let value3 = "19.87";
+let value4 = "COMP";
 
 // 2. Convert values
 let converted1 = Number(value1);
