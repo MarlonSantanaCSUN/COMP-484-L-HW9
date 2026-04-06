@@ -83,6 +83,7 @@ var taxAmount = subtotal * taxRate; // multiplication
 var total = subtotal + taxAmount; // addition
 
 // 3. Format numbers
+var formattedshipping = shipping.toFixed(2);
 var formattedSubtotal = subtotal.toFixed(2);
 var formattedTax = taxAmount.toFixed(2);
 var formattedTotal = total.toFixed(2);
@@ -90,7 +91,7 @@ var formattedTotal = total.toFixed(2);
 // 4. Build output string
 var mathResults =
   `Item Price: $${itemPrice}<br>` +
-  `Shipping: $${shipping}<br>` +
+  `Shipping: $${formattedshipping}<br>` +
   `Subtotal: $${formattedSubtotal}<br>` +
   `Tax (8.25%): $${formattedTax}<br>` +
   `Total Cost: $${formattedTotal}`;
