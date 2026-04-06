@@ -20,7 +20,7 @@ https://marlonsantanacsun.github.io/COMP-484-L-HW9/
 
 3. Path to a screenshot file of the finished webpage
 
-Screenshot of the finished webpage:
+The screenshot of the finished webpage:
 
 ![Screenshot](HW9Screenshot.png)
 
